@@ -4,7 +4,7 @@ exports.onMessageReceived = (function Version(bot, doc, user, userID, channelID,
     if(message === undefined){
         return;
     }
-    if (message === "*sincestart" || message === "*runtime") {
+    if (message === "*sincestart" || message === "*runtime" || message === "*uptime" || message === "*upfor" || message === "*sincestartup" || message === "*runtimer") {
         var end = new Date() - start;
         bot.sendMessage({
             to: doc.logchannel,
