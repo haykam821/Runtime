@@ -8,11 +8,11 @@ exports.onMessageReceived = (function Version(bot, doc, user, userID, channelID,
         var end = new Date() - start;
         bot.sendMessage({
             to: doc.logchannel,
-            message: user + " asked for how long the bot has been running for since its last startup (`" + end + "`)"
+            message: user + " asked for how long the bot has been running for since its last startup (`" + end + "` milliseconds)"
         });
         bot.sendMessage({
             to: channelID,
-            message: "This bot has been running for `" + end + "` since its last startup."
+            message: "This bot has been running for `" + end + "` milliseconds since its last startup."
         });
     }
 });
