@@ -1,6 +1,6 @@
 var start = new Date();
 
-exports.onMessageReceived = (function Version(bot, doc, user, userID, channelID, message, event) {
+exports.onMessageReceived = (function Runtime(bot, doc, user, userID, channelID, message, event) {
     if(message === undefined){
         return;
     }
