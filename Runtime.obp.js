@@ -1,6 +1,8 @@
 var start = new Date();
 
 exports.onMessageReceived = (function Runtime(bot, doc, user, userID, channelID, message, event) {
+    require('./../exports.js').registerCmd(['sincestart', 'runtime', 'uptime', 'upfor', 'sincestartup', 'runtimer'], 'Repeats the given message.');
+    
     if(message === undefined){
         return;
     }
